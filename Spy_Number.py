@@ -1,16 +1,13 @@
-Number = int(input())
-Temp = Number
-Sum = 0
-prod = 1
+n=int(input())
+Sum=0
+prod=1
+while n > 0 :
+    r=n%10
+    Sum+=r
+    prod*=r
+    n=n//10
 
-while Temp > 0:
-    lastDigit = Temp % 10
-    Sum = Sum + lastDigit
-    prod = prod * lastDigit
-    Temp = Temp // 10
-
-
-if Sum == prod:
+if Sum==prod :
     print("Spy Number")
-else:
+else :
     print("Not Spy Number")
