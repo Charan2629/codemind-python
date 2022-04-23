@@ -1,14 +1,12 @@
-Number = int(input())
-Sum = 0
-sqr=Number*Number
-while(sqr>0) :
+n=int(input())
+Sum=0
+sqr=n*n
+while sqr>0 :
     r=sqr%10
     Sum+=r
     sqr=sqr//10
 
-
-
-if Sum == Number:
+if Sum == n :
     print("Neon Number")
-else:
+else :
     print("Not Neon Number")
