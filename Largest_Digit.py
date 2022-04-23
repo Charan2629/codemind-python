@@ -1,12 +1,8 @@
-n = int(input())
-
-
-ld = 0
-
-while n > 0:
+n=int(input())
+largest = 0
+while n > 0 :
     r = n % 10
-    if ld < r:
-        ld = r
-    n = int(n / 10)
-
-print(ld)
+    if largest < r :
+        largest = r
+    n = n // 10
+print(largest)
