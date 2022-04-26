@@ -1,9 +1,7 @@
+import math
 n=int(input())
-flag=0
-for i in range (1,n) :
-    if i*i == n :
-        flag=1
-if flag :
-    print("True")
+sq_rt=int(math.sqrt(n))
+if((sq_rt*sq_rt)==n) :
+        print("True")
 else :
-    print("False")
+        print("False")
