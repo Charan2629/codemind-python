@@ -7,7 +7,7 @@ while(n):
     rem=n%10
     Sum=Sum+int(rem**length)
     n=n//10
-    length=length-1
+    length-=1
 if Sum==temp :
     print(True)
 else :
