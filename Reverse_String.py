@@ -1,6 +1,6 @@
-def reverse(str):   
-    str = str[::-1]   
-    return str   
-    
-s = input()  
-print (reverse(s)) 
+string = input()
+s = string.split()[::-1]
+l = []
+for i in s:
+    l.append(i)
+print(" ".join(l))
