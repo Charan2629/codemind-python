@@ -1,17 +1,24 @@
-n=int(input())
-l=[]
-for i in range(2,n):
-    cnt=0
-    for j in range(2,i+1):
-        if(i%j==0):
-            cnt=cnt+1
-    if cnt<3:
-        l.append(i)
-cnt=0
-for k in range(len(l)):
-    for r in range(k+1,len(l)):
-        if l[k]*l[r]==n:
-            cnt=cnt+1
-            print(l[k],l[r])
-if cnt<1:
-    print("-1")
+def prime(n):
+    c=0
+    for i in range(1,n+1):
+        if(n%i==0):
+             c+=1
+    if(c==2):
+        return 1
+    else:
+        return 0
+a=int(input())
+f=0
+for i in range(1,a+1):
+    if prime(i):
+        for j in range(1,a+1):
+            if prime(j):
+                if(i*j==a):
+                    x=i
+                    y=j
+                    f=1
+                    break
+if(f==0):
+    print('-1')
+else:
+    print(y,x)
