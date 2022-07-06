@@ -1,10 +1,13 @@
-lower_range = int(input())
-upper_range = int(input())
-
-for num in range(lower_range, upper_range + 1):
-   if num > 1:
-      for i in range(2, num):
-         if (num % i) == 0:
-            break
-      else:
-         print(num)
+def is_prime(n):
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            return 0
+    else:
+        return 1
+s=int(input())
+e=int(input())
+if s==1:
+    s=2
+for i in range(s,e+1):
+    if is_prime(i):
+        print(i)
