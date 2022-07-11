@@ -1,11 +1,7 @@
-n = int(input())
-rev=0
-temp = n
-while n > 0 :
-    r = n % 10
-    rev = rev * 10 + r
-    n = n // 10
-if temp == rev :
-    print("True")
-else :
-    print("False")
+def is_palin(n):
+    if str(n)==str(n)[::-1]:
+        return True
+    else:
+        return False
+n=int(input())
+print(is_palin(n))
