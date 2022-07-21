@@ -1,14 +1,12 @@
-n=int(input())
-test_list = list(map(int,input().split()))
-  
-flag = 0
-i = 1
-while i < len(test_list):
-    if(test_list[i] > test_list[i - 1]):
-        flag = 1
-    i += 1
-      
-if (not flag) :
-    print ("yes")
-else :
-    print ("no")
+n = int(input())
+arr = list(map(int,input().split()))
+c = 0
+for i in range(0,n+1):
+    if i==n-1:
+        break
+    if arr[i]>arr[i+1]:
+        c+=1
+if c==n-1:
+    print("yes")
+else:
+    print("no")
