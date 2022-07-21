@@ -1,11 +1,16 @@
 n=int(input())
 l=list(map(int,input().split()))
 s,e=map(int,input().split())
-ll=[]
-for i in l:
-    if i<s or i>e:
-        ll.append(i)
-if len(ll)==0:
-    print(-1)
+flag=0
+a=[]
+b=[]
+for i in range(s,e+1):
+    a.append(i)
+for x in l:
+    if x not in a:
+        b.append(x)
+        flag=1
+if flag:
+    print(max(b))
 else:
-    print(max(ll)) 
+    print(-1)
