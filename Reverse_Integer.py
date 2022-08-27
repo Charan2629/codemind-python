@@ -3,9 +3,6 @@ def int_reverser(test):
         answer = int(str(test)[::-1])
     else:
         answer = -int(str(-test)[::-1])
-    if -2**31 <= answer <= 2**31 - 1:
-        return answer
-    else:
-        return 0
+    return answer
 test=int(input())
 print(int_reverser(test))
