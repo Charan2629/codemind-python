@@ -1,13 +1,14 @@
 n=int(input())
 l=list(map(int,input().split()))
 k=int(input())
-l1=[]
+a=[]
 flag=0
-for i in l:
-   if l.count(i)==k and i not in l1:
-       l1.append(i)
-       flag=1
-if flag:
-    print(*l1)
+for i in set(l):
+    c=l.count(i)
+    if c==k:
+        a.append(i)
+        flag=1
+if flag==1:
+    print(*a)
 else:
     print(-1)
