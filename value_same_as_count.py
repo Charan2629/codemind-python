@@ -1,9 +1,14 @@
 n=int(input())
 l=list(map(int,input().split()))
-l1=[]
+a=[]
+b=[]
 c=0
 for i in l:
-   if l.count(i)==i and i not in l1:
-       l1.append(i)
-       c+=1
+    if i not in b:
+        b.append(i)
+for i in b:
+    a.append(l.count(i))
+for i in range(len(a)):
+    if a[i]==b[i]:
+        c+=1
 print(c)
