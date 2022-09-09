@@ -1,7 +1,7 @@
 import math
 n=int(input())
-sq_rt=int(math.sqrt(n))
-if((sq_rt*sq_rt)==n) :
-        print("True")
-else :
-        print("False")
+sq=math.sqrt(n)
+if sq==int(n**0.5):
+    print(True)
+else:
+    print(False)
