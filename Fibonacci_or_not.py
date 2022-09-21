@@ -1,14 +1,13 @@
+def is_perfect(n):
+    sq=n**0.5
+    if sq==int(sq):
+        return 1
+    else:
+        return 0
+def fib(n):
+    if is_perfect(5*n*n+4) or is_perfect(5*n*n-4):
+        return True
+    else:
+        return False
 n=int(input())
-a=0
-b=1
-if n==0 :
-    print("True")
-c=a+b
-while(c<n) :
-    a=b;
-    b=c;
-    c=a+b;
-if c==n :
-    print("True")
-else :
-    print("False")
+print(fib(n))
