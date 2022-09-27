@@ -2,5 +2,10 @@ n=int(input())
 l=list(map(int,input().split()))
 a=[]
 for i in l:
-    a.append(len(str(i)))
-print(a.count(min(a)))
+    if i>=0:
+        a.append(len(str(i)))
+    else:
+        i=-i
+        a.append(len(str(i)))
+k=min(a)
+print(a.count(k))
