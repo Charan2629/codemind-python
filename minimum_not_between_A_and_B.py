@@ -1,13 +1,14 @@
 n=int(input())
 l=list(map(int,input().split()))
-s,e=map(int,input().split())
+k,m=map(int,input().split())
+l.sort()
 a=[]
 flag=0
 for i in l:
-    if i<s or i>e:
+    if i<k or i>m:
         a.append(i)
         flag=1
-if flag==0:
-    print(-1)
-else:
+if flag:
     print(min(a))
+else:
+    print(-1)
