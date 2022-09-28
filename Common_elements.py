@@ -1,12 +1,10 @@
-a,b=map(int,input().split())
-l1=list(map(int,input().split()))
-l2=list(map(int,input().split()))
-n=[]
-ml=[]
-for i in l1:
-    if i in l2:
-        n.append(i)
-for i in n:
-    if i not in ml:
-        ml.append(i)
-print(*ml)
+n,m=map(int,input().split())
+l=list(map(int,input().split()))
+p=list(map(int,input().split()))
+a=[]
+for i in l:
+    if i not in a:
+        a.append(i)
+for i in a:
+    if i in p:
+        print(i,end=' ')
