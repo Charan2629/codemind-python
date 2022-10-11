@@ -1,5 +1,5 @@
-s=input().split(' ')[::-1]
+s=input().split()[::-1]
 a=[]
 for i in s:
     a.append(i[::-1])
-print(" ".join(a))
+print(*a)
