@@ -1,4 +1,4 @@
 s=input().split()
-for j in s[-1]:
-    print(j)
+for i in s[-1]:
+    print(i)
     break
