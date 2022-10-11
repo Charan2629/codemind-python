@@ -1,10 +1,10 @@
-s=input()
-a=''
-for i in s:
-    if i in "aeiou":
-        a=a+i
-r="".join(set(a))
-if len(r)==5:
-    print(True)
-else:
-    print(False)
+a=input()
+s='aeiou'
+d=[]
+f=0
+for i in a:
+    if i  in s and i not in d:
+        d.append(i)
+d.sort()
+d=''.join(d)
+print(d==s)
