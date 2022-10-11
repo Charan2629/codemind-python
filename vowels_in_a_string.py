@@ -1,7 +1,7 @@
 s=input()
-se=input()
-if se in s:
+v=input()
+if v in s:
     print(True)
-    print(s.index(se))
+    print(s.index(v))
 else:
     print(False)
