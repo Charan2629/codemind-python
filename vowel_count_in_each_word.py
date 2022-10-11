@@ -1,10 +1,7 @@
-s=input().split()
-c=0
-a=[]
+s=input().lower().split()
 for i in s:
-    for j in i:
-        if j in "aeiouAEIOU":
-            c+=1
-    a.append(c)
     c=0
-print(*a)
+    for j in i:
+        if j in 'aeiou':
+            c+=1
+    print(c,end=' ')  
