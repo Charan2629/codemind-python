@@ -1,6 +1,6 @@
-ns=input()
-s=ns.lower()
+s=input().lower().replace(' ','')
 a=[]
+c=0
 for i in s:
     if i not in a:
         a.append(i)
