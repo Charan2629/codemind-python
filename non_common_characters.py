@@ -1,12 +1,12 @@
-a=list(input().lower().replace(' ',''))
-b=list(input().lower().replace(' ',''))
-d=[]
-# a=set(a)
-# b=set(b)
+a=input().lower().replace(' ','')
+b=input().lower().replace(' ','')
+s=[]
 for i in a:
-    if i not in b and i not in d:
-        d.append(i)
+    if i not in b:
+        s.append(i)
 for i in b:
-    if i not in a and i not in d:
-        d.append(i)
-print("".join(sorted(d)))
+    if i not in a:
+        s.append(i)
+ns=sorted(list(set(s)))
+for i in ns:
+    print(i,end='')
