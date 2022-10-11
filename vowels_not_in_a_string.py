@@ -1,16 +1,15 @@
-s=input()
-c="aeiou"
-a=[]
-b=[]
-flag=0
+a=input().replace(' ','')
+s='aeiou'
+d=[]
+flag=1
+for i in a:
+    if i in s and i not in d:
+        d.append(i)
+d.sort()
+d=''.join(d)
 for i in s:
-    if i in c:
-        a.append(i)
-for i in c:
-    if i not in a:
-        b.append(i)
-        flag=1
+    if i not in d:
+        print(i,end=' ')
+        flag=0
 if flag:
-    print(*b)
-else:
     print(0)
