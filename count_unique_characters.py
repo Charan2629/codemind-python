@@ -1,11 +1,10 @@
-a=input().replace(' ','')
-a=a.lower()
-s=[]
-for i in a:
-    if i not in s:
-        s.append(i)
-d=''
+s=input().lower().replace(' ','')
+a=[]
+c=0
 for i in s:
-    if(a.count(i)==1):
-        d+=i
-print(len(sorted(d)))
+    if i not in a:
+        a.append(i)
+for i in a:
+    if s.count(i)==1:
+        c+=1
+print(c)
