@@ -1,5 +1,3 @@
-s=input().split(' ')
-a=[]
+s=input().split()
 for i in s:
-    a.append(len(i))
-print(*a)
+    print(len(i),end=' ')
