@@ -1,4 +1,4 @@
-s=input().split(' ')
+s=input().split()
 a=[]
 for i in s:
     a.append(len(i))
