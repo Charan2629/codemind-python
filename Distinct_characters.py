@@ -5,4 +5,5 @@ for i in s:
         a.append(i)
 ns=sorted(a)
 for i in ns:
-    print(i,end='')
+    if s.count(i)==1:
+        print(i,end='')
