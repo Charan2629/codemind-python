@@ -1,9 +1,11 @@
-a=list(input().lower().replace(' ',''))
-b=list(input().lower().replace(' ',''))
-d=[]
+a=input().lower().replace(' ','')
+b=input().lower().replace(' ','')
+s=[]
 c=0
 for i in a:
-    if i in b and i not in d:
-        d.append(i)
+    if i in b:
+        s.append(i)
+for i in list(set(b)):
+    if i in list(set(s)):
         c+=1
 print(c)
