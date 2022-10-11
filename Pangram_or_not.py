@@ -1,5 +1,7 @@
-a=list(input().lower().replace(' ',''))
-b='abcdefghijklmnopqrstuvwxyz'
-a=list(set(a))
-b=list(b)
-print(sorted(a)==b)
+s=input().replace(' ','').lower()
+a='abcdefghijklmnopqrstuvwxyz'
+c=[]
+for i in s:
+    if i in a and i not in c:
+        c.append(i)
+print(len(c)==26)
