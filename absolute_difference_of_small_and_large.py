@@ -1,3 +1,6 @@
 s=input().split()
+a=[]
 for i in s:
-    print(abs(ord(min(i))-ord(max(i))),end=' ')
+    r=abs(ord(max(i))-ord(min(i)))
+    a.append(r)
+print(*a)
