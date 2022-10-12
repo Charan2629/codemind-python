@@ -1,3 +1,6 @@
 s=input().split()
+a=[]
 for i in s:
-    print(min(i),max(i),end=' ')
+    a.append(min(i))
+    a.append(max(i))
+print(*a)
