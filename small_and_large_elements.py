@@ -1,2 +1,3 @@
 s=input().split()
-print(min(s[0]),max(s[-1]))
+print(min(s[0]),end=' ')
+print(max(s[-1]))
