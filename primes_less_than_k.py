@@ -1,16 +1,17 @@
 def isprime(n):
     for i in range(2,int(n**0.5)+1):
         if n%i==0:
-            return False
+            return 0
     else:
-        return True
+        return 1
 n=int(input())
-c=0
 l=list(map(int,input().split()))
+l.sort()
 k=int(input())
+c=0
 for i in l:
     if i>1:
-         if i<=k:  
-            if isprime(i):
+        if isprime(i):
+            if i<=k:
                 c+=1
 print(c)
